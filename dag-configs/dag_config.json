@@ -1,0 +1,43 @@
+{
+    "extractor_config":
+    { 
+        "py_file_config":{
+            "dag_name": "fetch_foodata.py"
+        },
+
+        "base_config":
+        {
+            "task_name": "automated_sample_task_dag_2021", 
+            "start_date": "2021-10-21", 
+            "catch_up": "True",
+            "dag_description": "Sample dag created by script",
+            "schedule_interval": "* * 0 21"
+        },
+        "hello_operator_config":{
+            "hello_task_id": "hello_task",
+            "hello_op_callable": "print_hello"
+        },
+
+        "second_operator_config":{
+            "second_task_id": "second_task",
+            "second_op_callable": "second_task_callable"
+        },
+        
+        "third_operator_config":{
+            "third_task_id": "third_task",
+            "third_op_callable": "third_task_callable"
+        },
+        
+        "hello_function_configuration":{
+            "message_sample": "Hello World"
+        },
+        "second_function_configuration":{
+            "second_message": "Second hello"
+        },
+        "third_function_configuration":{
+            "third_message": "Third hello"
+        }
+
+    }
+        
+}
